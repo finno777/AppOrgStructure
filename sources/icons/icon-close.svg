@@ -1,0 +1,5 @@
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="close" fill="currentColor">
+        <path d="M15,13 L2,0 L0,2 L13,15 L0,28 L2,30 L15,17 L28,30 L30,28 L17,15 L30,2 L28,-1.0658141e-14 L15,13 Z"></path>
+    </g>
+</svg>

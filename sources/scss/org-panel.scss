@@ -1,0 +1,29 @@
+.org-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 840px;
+
+  &__add {
+    .button {
+      @include media('<365px') {
+        font-size: 17px;
+        padding: 17px 15px;
+
+        &:before {
+          margin-top: -3px;
+          width: 16px;
+          height: 16px;
+          margin-right: 7px;
+          background-size: cover;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  &__edit {
+    margin-left: auto;
+  }
+}

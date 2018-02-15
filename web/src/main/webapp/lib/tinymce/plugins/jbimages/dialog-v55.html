@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Upload an image</title>
+    <script type="text/javascript" src="js/dialog-v4.js"></script>
+    <link href="css/dialog-v4.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<form class="form-inline" id="upl" name="upl" action="" method="post" enctype="multipart/form-data"
+      target="upload_target">
+
+    <div id="upload_in_progress" class="upload_infobar"><img src="img/spinner.gif" width="16" height="16"
+                                                             class="spinner">Upload in progress&hellip;
+        <div id="upload_additional_info"></div>
+    </div>
+    <div id="upload_infobar" class="upload_infobar"></div>
+
+    <p id="upload_form_container">
+        <input id="uploader" name="userfile" type="file" accept="image/*" class="jbFileBox"
+               onChange="onChangeImageInp();">
+    </p>
+
+    <!--<p id="the_plugin_name"><a href="http://justboil.me/" target="_blank" title="JustBoil.me &mdash; a TinyMCE Images Upload Plugin">JustBoil.me Images Plugin</a></p>-->
+    <p>Поддерживаемые форматы: gif, jpeg, jpg, bmp, png.</p>
+</form>
+
+<iframe id="upload_target" name="upload_target"></iframe>
+
+</body>
+<script type="text/javascript">
+    var allowExt = ["gif", "jpeg", "jpg", "bmp", "png"];
+    function onChangeImageInp() {
+        var fullPath = document.getElementById("uploader").value;
+        if (fullPath) {
+            var extIndex = fullPath.lastIndexOf(".");
+            var ext = null;
+            if (extIndex != -1) {
+                ext = fullPath.substring(extIndex + 1);
+                if (ext != null && ext.length > 0) {
+                    ext = ext.toLowerCase();
+                    //alert(allowExt.indexOf(ext));
+                    if (allowExt.indexOf(ext) != -1) {
+                        jbImagesDialog.initForm();
+                        document.upl.submit();
+                        jbImagesDialog.inProgress();
+                    } else {
+                        ext = null;
+                    }
+                } else {
+                    ext = null;
+                }
+            }
+            if (ext == null) {
+                jbImagesDialog.uploadFinish({
+                    resultCode: "failed",
+                    result: "Выбранный формат файла не поддерживается."
+                });
+            }
+        }
+
+    }
+    document.getElementById('upload_target').onload = function () {
+        var targetUpload = document.getElementById('upload_target');
+        var resultElm = targetUpload.contentDocument;//.getElementsByTagName('pre')[0];
+        if (!resultElm.documentElement.innerText) {
+            return;
+        }
+        var uploadResult = resultElm.documentElement.innerText;
+        if (uploadResult.length > 0) {
+            var resultObj = JSON.parse(uploadResult);
+            if (resultObj.success) {
+                resultObj.resultCode = resultObj.success;
+                resultObj.filename = resultObj.imageSource;
+                jbImagesDialog.uploadFinish(resultObj);
+            } else {
+                jbImagesDialog.uploadFinish(resultObj);
+            }
+        }
+    }
+</script>
+</html>

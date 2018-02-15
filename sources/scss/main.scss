@@ -1,0 +1,142 @@
+@import "../../frontend-shell/node_modules/include-media/dist/include-media";
+@import "../../frontend-shell/shared/main";
+
+.gost-form__value.gost-form__value--inline-error {
+    &[data-error] .error-info--absolute {
+      top: -42px;
+    }
+    &[data-error]:not([data-error-type="small"]):before {
+      right: 46px;
+    }
+}
+
+.gost-form__value[data-error] {
+  .mce-tinymce.mce-container:after {
+    content: '';
+    border-left: 4px solid #d0011b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.org-page {
+  svg {
+    max-width: 100%;
+  }
+
+  .dropdown__item {
+    button {
+      display: block;
+      white-space: nowrap;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3756;
+      text-decoration: none;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      font-family: $default-font;
+      cursor: pointer;
+      outline: none;
+
+      &.danger {
+        color: $danger-red-color;
+
+        &:hover {
+          color: $danger-red-color-active;
+        }
+      }
+    }
+  }
+}
+
+.org-list {
+  margin-bottom: 80px;
+  max-width: 840px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a.link-text {
+  font-size: 16px;
+	color: #333333;
+	text-decoration: none;
+}
+
+@import "static";
+
+@import "org-columns";
+@import "org-panel";
+@import "org-profile";
+@import "org-sepervised";
+@import "org-advisers";
+@import "org-person";
+@import "org-doc";
+@import "org-members";
+@import "org-settings";
+
+@import "other-authorities";
+@import "sidemenu";
+@import "form";
+@import "edit-box";
+@import "ari-nav";
+@import "government";
+@import "subdivision";
+
+$default-four-font: 24px;
+
+.black {
+  @import "skins/bg/black";
+}
+
+.white {
+  @import "skins/bg/white";
+}
+
+.blue {
+  @import "skins/bg/blue";
+}
+
+.show {
+  @import "skins/image-show/show";
+}
+
+.hide {
+  @import "skins/image-show/hide";
+}
+
+.ptsans {
+  @import "skins/font-family/ptsans";
+}
+
+.rubik {
+  @import "skins/font-family/rubik";
+}
+
+.lsZero {
+  @import "skins/letter-spacing/ls0";
+}
+
+.lsMiddle {
+  @import "skins/letter-spacing/ls05";
+}
+
+.lsBig {
+  @import "skins/letter-spacing/ls1";
+}
+
+.low {
+  @import "skins/font-size/low";
+}
+
+.middle {
+  @import "skins/font-size/middle";
+}
+
+.big {
+  @import "skins/font-size/big";
+}

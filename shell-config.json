@@ -1,0 +1,12 @@
+{
+  "pathToPublicCss": "web/src/main/webapp/css/gost",
+  "pathToPublicImg": "web/src/main/webapp/images",
+  "pathToPublicJs": "web/src/main/webapp/js/gost",
+  "pathToSourcesCss": "./sources/scss",
+  "pathToSourcesImg": "./sources/images",
+  "pathToSourcesJs": "./sources/js",
+
+  "pathToSourcesSVG": "./sources/icons",
+  "pathToPublicSVG": "web/src/main/webapp/sprite",
+  "pathToPublicSVGExample": "./sources/temp"
+}

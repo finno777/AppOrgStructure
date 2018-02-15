@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>avi</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="avi">
+            <path d="M33,6 L44,15 L44,46 L44,46 C44,47.1045695 43.1045695,48 42,48 L12,48 L12,48 C10.8954305,48 10,47.1045695 10,46 L10,8 L10,8 C10,6.8954305 10.8954305,6 12,6 L33,6 Z" id="Fill-1" fill="#EAEAEA"></path>
+            <path d="M44,15 L35,15 L35,15 C33.8954305,15 33,14.1045695 33,13 L33,6 L44,15 Z" id="Fill-3" fill="#C6C6C6"></path>
+            <polygon id="Fill-5" fill="#E94343" points="10 39 44 39 44 23 10 23"></polygon>
+            <path d="M22.265,32.985 L19.47,32.985 L18.781,35 L17,35 L20.276,25.835 L21.589,25.835 L24.865,35 L22.993,35 L22.265,32.985 Z M19.925,31.555 L21.875,31.555 L21.199,29.527 L20.926,28.097 L20.861,28.097 L20.588,29.54 L19.925,31.555 Z M27.751,31.243 L27.985,32.79 L28.05,32.79 L28.31,31.23 L30.052,25.9 L31.924,25.9 L28.544,35.065 L27.27,35.065 L23.864,25.9 L25.931,25.9 L27.751,31.243 Z M32.769,25.9 L34.55,25.9 L34.55,35 L32.769,35 L32.769,25.9 Z" id="AVI" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

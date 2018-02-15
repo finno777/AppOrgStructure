@@ -1,0 +1,91 @@
+.subdivision {
+    &__header {
+        margin-top: 20px;
+    }
+}
+
+.orgspec {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        display: flex;
+        margin-bottom: 10px;
+
+        &-column {
+            flex-flow: column;
+        }
+    }
+
+    &__left {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        color: #000000;
+        width: 120px;
+    }
+
+    &__right {
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0.3px;
+        color: #000000;
+    }
+}
+
+.subgroup {
+    display: flex;
+	position: relative;
+    margin: 10px 0 30px;
+
+    &__menu {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border: 1px solid #d4d4d6;
+        border-top: 0;
+        box-shadow: 1px 1px 6px #d4d4d6;
+        display: none;
+        z-index: 2;
+
+        &--active {
+            display: block;
+        }
+
+        &-item {
+            a, a:link {
+                padding: 14px 60px;
+                display: block;
+                text-decoration: none;
+                color: #ea4d52;
+            }
+        }
+    }
+    
+    &__input {
+        height: 48px;
+        background-color: #ffffff;
+        border: solid 1px #d4d4d6;
+        padding-left: 12px;
+        width: calc(100% - 12px);
+    }
+
+    &__button {
+        background: #fff;
+        border: 1px solid #d4d4d6;
+        border-left: 0;
+        color: #2aac4a;
+        cursor: pointer;
+
+        svg {
+            width: 26px;
+            padding: 6px;
+            display: flex;
+        }
+    }
+}

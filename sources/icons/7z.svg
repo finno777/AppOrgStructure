@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>7z</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7z">
+            <path d="M33,6 L44,15 L44,46 L44,46 C44,47.1045695 43.1045695,48 42,48 L12,48 L12,48 C10.8954305,48 10,47.1045695 10,46 L10,8 L10,8 C10,6.8954305 10.8954305,6 12,6 L33,6 Z" id="Fill-1" fill="#EAEAEA"></path>
+            <path d="M44,15 L35,15 L35,15 C33.8954305,15 33,14.1045695 33,13 L33,6 L44,15 Z" id="Fill-3" fill="#C6C6C6"></path>
+            <polygon id="Fill-5" fill="#596D7E" points="10 39 44 39 44 23 10 23"></polygon>
+            <path d="M22.352,35 L25.329,27.993 L25.901,27.356 L25.121,27.486 L21.78,27.486 L21.78,25.9 L27.643,25.9 L27.643,26.394 L24.003,35 L22.352,35 Z M28.059,33.57 L30.62,30.489 L31.283,29.93 L28.059,29.93 L28.059,28.5 L33.155,28.5 L33.155,29.93 L30.62,33.063 L29.97,33.57 L33.155,33.57 L33.155,35 L28.059,35 L28.059,33.57 Z" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

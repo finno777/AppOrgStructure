@@ -1,0 +1,70 @@
+.edit-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__btn {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #d4d4d6;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    border-radius: 0;
+    background-color: #fff;
+    outline: none;
+
+    svg {
+      display: block;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__list {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    right: -1px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #cccccc;
+    min-width: 200px;
+    white-space: nowrap;
+    display: none;
+
+    ._btn {
+      display: block;
+      width: 100%;
+      padding: 12px 20px;
+      color: #2aac4a;
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      outline: none;
+      font-family: $default-font;
+
+      &:hover {
+        color: #33bd55;
+      }
+
+      &.danger {
+        color: $danger-red-color;
+
+        &:hover {
+          color: $danger-red-color-active;
+        }
+      }
+    }
+  }
+}

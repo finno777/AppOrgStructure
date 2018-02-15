@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="43" viewBox="0 0 34 43">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#EAEAEA" d="M1.53 0h20.493l11.623 8.842v32.232c0 .787-.685 1.426-1.53 1.426H1.53C.685 42.5 0 41.861 0 41.074V1.426C0 .64.685 0 1.53 0z"/>
+        <path fill="#C6C6C6" d="M33.646 8.854h-9.72c-.826 0-1.495-.65-1.495-1.451V0l11.215 8.854z"/>
+        <path fill="#0066A1" d="M0 33.646h33.646V17.708H0z"/>
+        <text fill="#FFF" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" letter-spacing="-.392">
+            <tspan x="2.125" y="30.063">DO</tspan> <tspan x="22.341" y="30.063" letter-spacing="-.549">C</tspan>
+        </text>
+    </g>
+</svg>

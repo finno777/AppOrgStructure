@@ -1,0 +1,170 @@
+.UIPageBody .MiddleDecoratorCenter{
+  background:$special-item-second-color;
+}
+
+.org-profile__desc .desc__options ._icon svg, .org-supervised__list ._icon svg{
+  display:none;
+}
+
+.org-doc__img, .member__img, .org-members__action, .org-members__contact li ._icon{
+  display:none;
+}
+
+.sidemenu__list{
+  border-color:$special-item-color;
+}
+
+.sidemenu__list li{
+  border-color:$special-item-color;
+}
+
+.government__info-label{
+  color:$special-item-color;
+}
+
+.government{
+  border-color:$special-item-color;
+}
+
+.governments__header{
+  display:none;
+}
+
+.governments__header-buttons{
+  display:none;
+}
+
+.government__right{
+  display:none;
+}
+
+.government__icon{
+  display:none;
+}
+
+.org-supervised__list ._text h4 a{
+  color:$special-item-color;
+}
+
+.org-supervised__list ._text p{
+  color:$special-item-color;
+}
+
+.org-members__info .member__title, .org-members__info .member__desc, .org-members__contact li ._text,{
+  color:$special-item-color;
+}
+
+.org-profile__desc .desc__title p{
+  color:$special-item-color;
+}
+
+.org-profile__desc .desc__options li{
+  color:$special-item-color;
+}
+
+.org-supervised__title h3{
+  color:$special-item-color;
+}
+
+.sidemenu__title{
+  color:$special-item-color;
+}
+
+.sidemenu__list li a{
+  color:$special-item-color;
+
+  &:hover{
+    color:$special-item-color;
+  }
+}
+
+.org-person__row .row__text{
+  color:$special-item-color;
+}
+
+.org-doc__row:hover .org-doc__name{
+  color:$special-item-color;
+}
+
+.org-person__row .row__title h3{
+  color:$special-item-color;
+}
+
+.org-doc__name{
+  color:$special-item-color;
+
+  &:hover{
+    color:$special-item-color;
+  }
+}
+
+.sidemenu__list li a:hover{
+  color:$special-item-color;
+}
+
+.sidemenu__list{
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+.org-doc__size{
+  color:$special-item-color;
+}
+
+.org-person__row .row__toggle{
+  color:$special-item-color;
+
+  path{
+    fill:$special-item-color;
+  }
+}
+
+.group__right, .persons__button{
+  display:none;
+}
+
+.government-section__list-item, .org-members__row, .org-members{
+  border-color:$special-item-color;
+}
+
+.org-doc{
+  border-color:$special-item-color;
+}
+
+h3{
+  color:$special-item-color;
+}
+
+.persons__info-contacts-item span{
+  color:$special-item-color;
+}
+
+.persons__info-contacts-item{
+  svg{
+    display:none;
+  }
+}
+
+.org-panel__edit{
+  display:none;
+}
+
+.persons__info-name, .persons__info-position, .division-task, .division-task__title{
+  color:$special-item-color;
+}
+
+.government-section__list .group__info-desc{
+  color:$special-item-color;
+}
+
+#governmentDescription{
+  color:$special-item-color;
+}
+
+.government-view__header, .government-section__title{
+  color:$special-item-color;
+}
+
+.government-section__list .group__info-title a, .government-section__list .group__info-title a:link{
+  color:$special-item-color;
+}

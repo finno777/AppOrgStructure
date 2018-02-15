@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<jboss-web>
+    <context-root>OrgStructure</context-root>
+    <security-domain>java:/jaas/gatein-domain</security-domain>
+</jboss-web>

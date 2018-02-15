@@ -1,0 +1,34 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <!--            <module export="true" name="deployment.gatein.ear"/>
+                        <module name="org.gatein.lib"/>-->
+            <module name="org.gatein.wci"/>
+            <module name="org.javassist"/>
+            <module name="javax.api"/>
+            <module name="javax.mail.api"/>
+            <module name="org.jboss.vfs"/>
+            <module name="org.dom4j"/>
+            <module name="com.google.guava"/>
+            <module name="org.spring" export="true">
+                <imports>
+                    <include path="META-INF"/>
+                </imports>
+            </module>
+
+            <module name="org.swagger" export="true">
+                <imports>
+                    <include path="META-INF/**"/>
+                    <include path="**"/>
+                </imports>
+            </module>
+            <module name="org.slf4j"/>
+            <module name="com.fasterxml.jackson.hibernate4"/>
+            <module name="javax.portlet.api"/><!-- Для Portlet API -->
+            <module name="org.apache.commons.codec"/>
+            <module name="org.apache.commons.logging"/>
+            <module name="org.apache.commons.io"/>
+            <module name="org.apache.logging.log4j"/> <!-- Для LOG4J -->
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

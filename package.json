@@ -1,0 +1,25 @@
+{
+  "name": "OrgStructure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "cd frontend-shell && npm run lint",
+    "init": "cd frontend-shell && npm run init",
+    "start": "cd frontend-shell && gulp",
+    "build": "cd frontend-shell && gulp build"
+  },
+  "eslintConfig": {
+    "extends": "./frontend-shell/.eslintrc.json"
+  },
+  "eslintIgnore": [
+    "src/main/webapp/js/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@vdrsk-java-repo/RST-2017/OrgStructure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

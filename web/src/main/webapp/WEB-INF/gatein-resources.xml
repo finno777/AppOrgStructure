@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<gatein-resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.exoplatform.org/xml/ns/gatein_resources_1_4 http://www.exoplatform.org/xml/ns/gatein_resources_1_4"
+                  xmlns="http://www.exoplatform.org/xml/ns/gatein_resources_1_4">
+    <portlet>
+        <name>OrgStructure</name>
+        <module>
+            <script>
+                <adapter>
+                    (function($) {
+                    <include>/js/gost/main.js</include>
+                    })($);
+                </adapter>
+            </script>
+            <depends>
+                <module>jquery</module>
+                <as>$</as>
+            </depends>
+        </module>
+    </portlet>
+</gatein-resources>

@@ -1,0 +1,3 @@
+/* This file is generated — do not edit by hand! */
+/* eslint-disable */
+{"version":3,"sources":["organization.js"],"names":["require","byData","name","val"],"mappings":";;AAAA;AACAA,QAAQ,CAAC,eAAD,EAAkB,iBAAlB,CAAR,EAA8C,aAAK;AAC/C,QAAMC,SAAS,SAATA,MAAS,CAACC,IAAD,EAAOC,GAAP;AAAA,0BAAwBD,IAAxB,IAA+BC,aAAWA,GAAX,SAAoB,EAAnD;AAAA,KAAf;AAEH,CAHD","file":"../organization.js","sourcesContent":["/* eslint-disable */\r\nrequire(['SHARED/jquery', 'SHARED/jqueryUI'], $ => {\r\n    const byData = (name, val) => `[data-${name}${val ? `=\"${val}\"` : ''}]`;\r\n    \r\n});\r\n"]}

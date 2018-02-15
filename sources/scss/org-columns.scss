@@ -1,0 +1,65 @@
+.org-columns {
+  display: flex;
+
+  .row__text.static a {
+    font-size: inherit;
+  }
+
+  @include media('<1200px'){
+    display: block;
+  }
+
+  &__back {
+    margin-bottom: 30px;
+
+    ._link {
+      font-size: 18px;
+      line-height: 22px;
+
+      &:before {
+        content: "\2190";
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &--mb {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 29px;
+      line-height: 33px;
+      color: $dark-blue;
+      margin: 0;
+
+      @include media('<768px'){
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__main {
+    flex: 1;
+  }
+
+  &__sidebar {
+    width: 360px;
+    flex-shrink: 0;
+    margin-left: 40px;
+
+    @include media('<1200px'){
+      width: auto;
+      margin-top: 80px;
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER"
+        "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration>
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{ISO8601} %-5p %x msg[%m] class[%c;%M(%L)]%n"/>
+        </layout>
+    </appender>
+    <appender name="rest-debug-file" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="/logs/orgStructure/rest-debug.log"/>
+        <param name="MaxFileSize" value="5000KB"/>
+        <param name="MaxBackupIndex" value="30"/>
+        <param name="encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="[%-5p] %d{ISO8601} %c{.1}:%L %x %m %n"/>
+        </layout>
+    </appender>
+    <appender name="service-debug-file" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="/logs/orgStructure/service-debug.log"/>
+        <param name="MaxFileSize" value="5000KB"/>
+        <param name="MaxBackupIndex" value="30"/>
+        <param name="encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="[%-5p] %d{ISO8601} %c{1.}:%L %x %m %n"/>
+        </layout>
+    </appender>
+
+    <appender name="debug-file" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="/logs/orgstructure/debug.log"/>
+        <param name="MaxFileSize" value="5000KB"/>
+        <param name="MaxBackupIndex" value="30"/>
+        <param name="encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="[%-5p] %d{ISO8601} %c{.1}:%L %x %m %n"/>
+        </layout>
+    </appender>
+    <logger name="com.digdes.rst.orgstructure.web">
+        <level value="DEBUG"/>
+        <appender-ref ref="rest-debug-file"/>
+    </logger>
+    <logger name="com.digdes.rst.orgstructure.persistance">
+        <level value="DEBUG"/>
+        <appender-ref ref="service-debug-file"/>
+    </logger>
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="debug-file"/>
+    </root>
+</log4j:configuration>

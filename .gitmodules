@@ -1,0 +1,3 @@
+[submodule "frontend-shell"]
+	path = frontend-shell
+	url = git@vdrsk-java-repo:RST-2017/frontend-shell.git

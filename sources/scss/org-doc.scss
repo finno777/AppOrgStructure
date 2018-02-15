@@ -1,0 +1,74 @@
+.org-doc {
+  border-top: 1px solid rgba(212, 212, 214, 0.5);
+  border-bottom: 1px solid rgba(212, 212, 214, 0.5);
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark-blue;
+    border-bottom: 1px solid rgba(212, 212, 214, 0.5);
+  }
+
+  &__row {
+    border-bottom: 1px solid rgba(212, 212, 214, 0.5);
+    padding: 20px;
+    display: flex;
+
+    @include media('<525px') {
+      padding: 20px 0;
+      flex-direction: column;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      .org-doc__name {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 28px;
+
+    @include media('<525px') {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      width: 34px;
+      height: 43px;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    color: $dark-blue;
+    line-height: 24px;
+
+    @include media('<525px') {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
+  &__size {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: rgba(44, 55, 86, 0.5);
+    margin-top: 5px;
+
+    @include media('<525px') {
+      font-size: 14px;
+    }
+  }
+}

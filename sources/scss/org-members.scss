@@ -1,0 +1,135 @@
+.org-members {
+  border-top: 1px solid rgba(212, 212, 214, 0.5);
+  border-bottom: 1px solid rgba(212, 212, 214, 0.5);
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__row {
+    border-bottom: 1px solid rgba(212, 212, 214, 0.5);
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+    @include media('<800px') {
+      padding: 20px 0;
+      flex-direction: column;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    width: 440px;
+    margin-right: 20px;
+
+    @include media('<800px') {
+      width: auto;
+      margin-right: 0;
+    }
+
+    @include media('<525px') {
+      flex-direction: column;
+    }
+
+    .member {
+      &__img {
+        width: 54px;
+        flex-shrink: 0;
+        margin-right: 25px;
+
+        svg {
+          width: 40px;
+          height: 54px;
+          margin: 0 auto;
+          display: block;
+        }
+
+        @include media('<525px') {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+
+      &__text {
+        letter-spacing: 0.3px;
+      }
+
+      &__title {
+        font-size: 20px;
+        color: $dark-blue;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 5px;
+      }
+
+      &__desc {
+        font-size: 18px;
+        color: rgba(44, 55, 86, 0.5);
+        line-height: 21px;
+      }
+    }
+  }
+
+  &__contact {
+    padding: 5px 0 0;
+    margin: 0;
+    list-style-type: none;
+
+    @include media('<800px') {
+      padding: 0;
+      margin-top: 15px;
+      margin-left: 80px;
+    }
+
+    @include media('<525px') {
+      margin-left: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      ._icon {
+        margin-right: 10px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      ._text {
+        font-size: 18px;
+        color: $dark-blue;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        max-width: 206px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__action {
+    margin-left: auto;
+
+    @include media('<800px') {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+  }
+}

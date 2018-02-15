@@ -1,0 +1,147 @@
+.org-profile {
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__main {
+    margin-bottom: 30px;
+    display: flex;
+
+    @include media('<768px') {
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 230px;
+    margin-right: 30px;
+    flex-shrink: 0;
+
+    @include media('<768px') {
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .desc {
+      &__title {
+        margin-bottom: 22px;
+
+        h2 {
+          font-weight: bold;
+          color: $dark-blue;
+          font-size: 28px;
+          letter-spacing: 0.5px;
+          margin: 0 0 5px;
+          text-transform: uppercase;
+
+          @include media('<768px') {
+            font-size: 26px;
+            margin-bottom: 15px;
+          }
+        }
+
+        p {
+          margin: 0;
+          color: #b2c0cd;
+          letter-spacing: 0.3px;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      &__btn {
+        margin-bottom: 35px;
+
+        .btn__inner {
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        .button {
+          background-color: #fff;
+          border-color: #ffffff;
+          box-shadow: 0 2px 12px 0 rgba(212, 212, 214, 0.55);
+          color: #2c3756;
+
+          @include media('>1024px') {
+            &:hover {
+              background-color: #33bd55;
+              color: #ffffff;
+              border-color: #33bd55;
+
+              path {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+      }
+
+      &__options {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          color: #333333;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        ._icon {
+          margin-right: 10px;
+          flex-shrink: 0;
+
+          svg {
+            display: block;
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+
+          li {
+            margin-right: 40px;
+            margin-bottom: 0;
+          }
+
+          @include media('<450px') {
+            flex-direction: column;
+            align-items: stretch;
+
+            li {
+              margin-bottom: 10px;
+              margin-right: 0;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
